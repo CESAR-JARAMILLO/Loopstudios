@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
 :root {
   --white: hsl(0, 0%, 100%);
@@ -15,6 +15,7 @@
 
 body {
   font-size: 15px;
+  font-family: 'Alata', sans-serif;
 }
 
 header {
@@ -81,4 +82,37 @@ header
   padding: 26px 26px;
   margin: 0 24px;
   border: 1px solid var(--white);
+}
+
+.details-section {
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-section
+.details-card {
+  margin: 96px 24px;
+  text-align: center;
+}
+
+.details-section
+img {
+  height: 224px;
+}
+
+.details-section
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 46px 0 16px 0;
+}
+
+.details-section
+p {
+  line-height: 25px;
+  color: var(--dark-gray);
 }
