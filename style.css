@@ -13,6 +13,20 @@
   box-sizing: border-box;
 }
 
+a.underline {
+  position: relative;
+}
+
+a.underline:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -8px; /* Adjust the distance between the text and the underline by changing the value of bottom */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white); /* Change the color of the underline here */
+}
+
 body {
   font-size: 15px;
   font-family: 'Alata', sans-serif;
