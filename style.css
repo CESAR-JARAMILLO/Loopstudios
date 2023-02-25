@@ -236,7 +236,7 @@ p {
   color: var(--very-dark-gray);
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1096px) {
   header
   nav {
     padding: 0 165px;
@@ -276,5 +276,45 @@ p {
     line-height: 70px;
     padding: 26px 26px;
     margin-left: 165px;
+  }
+
+  .details-section {
+    /* justify-content: flex-start; */
+    display: block;
+  }
+  
+  .details-section
+  .details-card {
+    margin: 160px 0 184px 165px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .details-section
+  img {
+    height: 500px;
+  }
+
+  .details-section
+  .details-text-container {
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    height: 316px;
+    width: 540px;
+    padding: 96px 0 0 96px;
+    background-color: var(--white);
+  }
+  
+  .details-section
+  h2 {
+    font-size: 48px;
+    margin: 0 0 16px 0;
+  }
+  
+  .details-section
+  p {
+    line-height: 25px;
+    color: var(--dark-gray);
   }
 }
