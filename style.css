@@ -148,6 +148,13 @@ button {
   display: none;
 }
 
+body
+button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+
 .creations-section
 h2 {
   font-family: 'Josefin Sans', sans-serif;
@@ -168,11 +175,23 @@ h2 {
   position: relative;
   height: 120px;
   margin: 12px 0;
+  color: var(--white);
+}
+
+.creations-section
+.img-container:hover {
+  color: var(--black);
+  cursor: pointer;
 }
 
 .creations-section
 img {
   height: 100%;
+}
+
+.creations-section
+img:hover {
+  opacity: 30%;
 }
 
 .img-container
@@ -181,7 +200,6 @@ p {
   font-size: 24px;
   text-transform: uppercase;
   position: absolute;
-  color: var(--white);
   bottom: 20px;
   left: 20px;
   width: 112px;
