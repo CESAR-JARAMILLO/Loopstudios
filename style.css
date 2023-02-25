@@ -53,6 +53,11 @@ header
 }
 
 header
+.links-container {
+  display: none;
+}
+
+header
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -229,4 +234,47 @@ footer
 p {
   margin-top: 16px;
   color: var(--very-dark-gray);
+}
+
+@media (min-width: 976px) {
+  header
+  nav {
+    padding: 0 165px;
+    top: 64px;
+  }
+
+  header
+  .hamburger {
+    display: none;
+  }
+
+  header
+  .links-container {
+    display: block;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links-container
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--white);
+  }
+
+  header
+  .hero-container {
+    justify-content: flex-start;
+  }
+
+  header
+  .hero-text-container {
+    height: 278px;
+    width: 650px;
+    font-size: 72px;
+    line-height: 70px;
+    padding: 26px 26px;
+    margin-left: 165px;
+  }
 }
