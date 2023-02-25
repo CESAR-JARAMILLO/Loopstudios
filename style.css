@@ -27,13 +27,52 @@ a.underline:hover::after {
   background-color: var(--white); /* Change the color of the underline here */
 }
 
+body
+header
+.hide {
+  display: none;
+}
+
 body {
   font-size: 15px;
   font-family: 'Alata', sans-serif;
+  position: relative;
 }
 
 header {
   height: 100vh;
+}
+
+header
+.nav-toggle-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: var(--black);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  /* top: -54rem; */
+}
+
+.nav-toggle-container
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 222px;
+  margin-left: 24px;
+}
+
+.nav-toggle-container
+.links-container
+a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
 }
 
 header
@@ -58,6 +97,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  z-index: 4;
 }
 
 header
@@ -67,6 +107,7 @@ header
 }
 
 header
+nav
 .links-container {
   display: none;
 }
@@ -291,6 +332,7 @@ p {
   }
 
   header
+  nav
   .links-container {
     display: block;
     width: 380px;
